@@ -8,7 +8,9 @@
 
 <ion-content padding>
   <h3 text-center>Select your favorite Quote</h3>
-
-  <button ion-item *ngFor="let quoteGroup of quoteCollection">Clickable</button>
-  
+  <ion-list>
+    <button ion-item *ngFor="let quoteGroup of quoteCollection">
+      <ion-icon [name]="quoteGroup.icon"></ion-icon>
+    </button>
+  </ion-list>
 </ion-content>
